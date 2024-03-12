@@ -14,7 +14,7 @@ def get_requests_data(token, from_date, to_date):
     headers = {
         'Authorization': f'Bearer {token}'
     }
-    url = f'https://management.azure.com/subscriptions/176469b5-f8a1-4b15-aaef-97797722e259/resourcegroups/info5900/providers/Microsoft.Web/sites/ulfs/providers/microsoft.Insights/metrics?timespan={from_date}/{to_date}&interval=PT1M&metricnames=Requests&aggregation=total&autoadjusttimegrain=true&validatedimensions=false&api-version=2019-07-01'
+    url = f'https://management.azure.com/subscriptions/176469b5-f8a1-4b15-aaef-97797722e259/resourcegroups/info5900/providers/Microsoft.Web/sites/flfs/providers/microsoft.Insights/metrics?timespan={from_date}/{to_date}&interval=PT1M&metricnames=Requests&aggregation=total&autoadjusttimegrain=true&validatedimensions=false&api-version=2019-07-01'
     r = requests.get(url, headers=headers)
     return r.json()['value'][0]['timeseries'][0]['data']
 

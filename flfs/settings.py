@@ -3,8 +3,8 @@ import os
 from azure.storage.blob import BlobServiceClient, ContainerClient
 
 
-AZURE_ACCOUNT_NAME = 'ulfs202312'
-AZURE_ACCOUNT_KEY = 'dLeqjRgdpuFn6ui7RKP4p3qS5qTxR+hVUkr/5hpU1rQnJve9IEuz76aW4rH+EOBm1JP+8URJTT+n+AStoUApwA=='
+AZURE_ACCOUNT_NAME = 'flfs202402'
+AZURE_ACCOUNT_KEY = 't+VP5zIjkz9qVkxGVFLoeSmVmgKQd84I0hLWGlN+9wcx6+vRA21sNKjf1ssmpy0tCuFE9e024Ioo+AStMjNmZA=='
 AZURE_CONTAINER = 'static'  # The container where files will be stored
 
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
@@ -18,10 +18,10 @@ STATIC_ROOT = '/static/'
 STATIC_URL = f"https://{AZURE_ACCOUNT_NAME}.blob.core.windows.net/{AZURE_CONTAINER}/"
 
 
-DB_NAME='ulfs'
-DB_SERVER = 'ulfs-info5900.database.windows.net'
-DB_USER_NAME = 'ulfs'
-DB_PASSWORD = 'MacBook@1993'
+DB_NAME='flfs'
+DB_SERVER = 'flfs-cen5035.database.windows.net'
+DB_USER_NAME = 'flfs'
+DB_PASSWORD = 'Chandana@21'
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,8 +37,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ulfs202312@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'ejkl dzij lxia myjh'  # Your Gmail App Password
+EMAIL_HOST_USER = 'faulfs202402@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'Chandana@21'  # Your Gmail App Password
 
 
 
@@ -65,7 +65,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ulfs.urls'
+ROOT_URLCONF = 'flfs.urls'
 
 TEMPLATES = [
     {
@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ulfs.wsgi.application'
+WSGI_APPLICATION = 'flfs.wsgi.application'
 
 
 DATABASES = {
