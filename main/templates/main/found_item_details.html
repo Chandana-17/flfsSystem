@@ -27,7 +27,7 @@
                         <h5 class="card-title mb-0">Item Details</h5>
                     </div>
                     <div class="card-body text-center">
-                        <img src="https://flfs202312.blob.core.windows.net/static/eastus2/{{ item.image }}"
+                        <img src="https://flfs202402.blob.core.windows.net/static/eastus2/{{ item.image }}"
                             class="img-fluid mb-2" />
                         <h5 class="card-title mb-0">{{ item.item_name }}</h5>
                     </div>
@@ -68,7 +68,7 @@
                         {% for timeline in timelines %}
                         {% if timeline.activity_type == "reported" %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>
@@ -81,7 +81,7 @@
                         {% elif timeline.activity_type == 'claimed' and user.is_superuser and item.admin_received and
                         not item.owner_collected and timeline.show_buttons %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>
@@ -93,7 +93,7 @@
                         </div>
                         {% elif timeline.activity_type == 'collected' %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>
@@ -105,7 +105,7 @@
                         </div>
                         {% elif timeline.activity_type == 'denied' %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>
@@ -117,7 +117,7 @@
                         </div>
                         {% elif timeline.activity_type == 'verified' %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>
@@ -129,7 +129,7 @@
                         </div>
                         {% else %}
                         <div class="d-flex align-items-start">
-                            <img src="https://flfs202312.blob.core.windows.net/static/eastus2/static/user.png"
+                            <img src="https://flfs202402.blob.core.windows.net/static/eastus2/static/user.png"
                                 width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
                             <div class="flex-grow-1">
                                 <small class="float-end text-navy">{{ timeline.timestamp|timesince }} ago</small>

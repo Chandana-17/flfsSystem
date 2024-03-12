@@ -11,7 +11,7 @@ class Command(BaseCommand):
             first_name = ''.join(random.choices(string.ascii_uppercase, k=5))
             last_name = ''.join(random.choices(string.ascii_uppercase, k=5))
             username = ''.join(random.choices(string.ascii_lowercase, k=5))
-            email = f'{username}@my.unt.edu'
+            email = f'{username}@fau.edu'
             password = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
 
             User.objects.create_user(username=username, email=email, password=password, first_name=first_name, last_name=last_name)

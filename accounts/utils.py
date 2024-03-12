@@ -14,7 +14,7 @@ def send_email(subject, message, from_mail, to_list, fail_silently=False):
 def send_otp_mail(mail_id, otp, user):
     subject = 'Your OTP for Registration - FLFS'
     message = render_to_string('accounts/otp_email_template.html', {'user': user, 'otp_code': otp})
-    from_email = 'UNT Lost and Found - FLFS'
+    from_email = 'Lost and Found - FLFS'
     recipient_list = [mail_id]
 
     email_message = EmailMessage(subject, message, from_email, recipient_list)

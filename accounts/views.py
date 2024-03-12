@@ -79,8 +79,8 @@ def loginPage(request):
 def registerPage(request):
     if request.method == 'POST':
         email = request.POST.get('email')
-        if email.split("@")[1].strip() != 'my.unt.edu':
-            messages.error(request, 'Only UNT Email Ids are allowed')
+        if email.split("@")[1].strip() != 'fau.edu':
+            messages.error(request, 'Only University Email Ids are allowed')
         else:
             form = CustomUserRegistrationForm(request.POST)
             if form.is_valid():
