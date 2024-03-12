@@ -19,7 +19,7 @@ STATIC_URL = f"https://{AZURE_ACCOUNT_NAME}.blob.core.windows.net/{AZURE_CONTAIN
 
 
 DB_NAME='flfs'
-DB_SERVER = 'flfs-cen5035.database.windows.net'
+DB_SERVER = 'flfs-cen-5035.database.windows.net'
 DB_USER_NAME = 'flfs'
 DB_PASSWORD = 'Chandana@21'
 
